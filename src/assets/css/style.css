@@ -1,0 +1,151 @@
+.carousel-open:checked + .carousel-item {
+				position: static;
+				opacity: 100;
+			}
+			.carousel-item {
+				-webkit-transition: opacity 0.6s ease-out;
+				transition: opacity 0.6s ease-out;
+			}
+			#carousel-1:checked ~ .control-1,
+			#carousel-2:checked ~ .control-2,
+			#carousel-3:checked ~ .control-3 {
+				display: block;
+			}
+			.carousel-indicators {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				bottom: 2%;
+				left: 0;
+				right: 0;
+				text-align: center;
+				z-index: 10;
+			}
+			#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+			#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+			#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+				color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+            }
+            /* Bottom left text */
+.bottom-left {
+  position: absolute;
+  top:  30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 15px;
+  right: 26px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  bottom: 20%;
+  left: 39%;
+  transform: translate(-50%, -50%);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(https://images.unsplash.com/photo-1526655805340-274e69922288?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+article > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+article div {
+  padding: 0.5rem 1.3rem;
+}
+article > div:last-child ul {
+  list-style: none;
+}
+article > div:last-child ul {
+  list-style: none;
+  display: flex;
+}
+article div > img {
+  width: 300px;
+}
+article > div:last-child h2 {
+  font-size: 28px;
+}
+article > div:last-child span {
+  text-transform: uppercase;
+  font-family: roboto, san-serif;
+}
+article ul > li {
+  padding: 0 0.3rem;
+}
+.red-effect {
+  background: linear-gradient(120deg, rgba(238, 73, 44, 1) 0%, rgba(238, 73, 44, 1) 0%, rgba(255, 255, 255, 0) 64%);
+  position: absolute;
+  z-index: 0;
+  width: 1040px;
+  height: 467px;
+}
+@media (max-width: 460px) {
+  .red-effect,
+  article div > img {
+    display: none;
+  }
+  .padd-mob {
+    padding-left: 0px;
+  }
+}
+
+
+
+.movie-side {
+  position: absolute;
+  top: 8px;
+  font-size: 10px;
+  right: 16px;
+  background-color:#636e72;
+  padding: 6px;
+}
+
+.image-text {
+   position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
